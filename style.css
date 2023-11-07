@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+}
+
+body {
+    overflow: hidden;
+    background: #1D1E2D;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.box {
+    position: absolute;
+    top: 200px;
+    left: -220px;
+    background: orange;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    clip-path: circle(75%);
+    z-index: -11;
+    animation: circle 3s infinite;
+}
+
+.box-2 {
+    height: 500px;
+    width: 500px;
+    background: #1D1E2D;
+    z-index: 1;
+}
+
+@keyframes circle {
+    0% {
+        clip-path: circle(35%);
+    }
+
+    50% {
+
+        clip-path: circle(75%);
+    }
+
+    100% {
+        clip-path: circle(35%);
+    }
+}
+
+.nav {
+    width: 100%;
+    padding: 15px 200px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0px 40px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ul li a {
+    font-size: 18px;
+    color: orange;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: rgba(255, 166, 0, 0.679);
+}
+
+.nav .logo img {
+    width: 200px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .left .men {
+    width: 510px; /* Adjust the width to your desired size */
+    top: 40px;
+    position: relative;
+    left: 195px;
+    z-index: 111;
+}
+
+
+.content .right {
+    position: relative;
+    bottom: 40px;
+    margin-left: 280px;
+}
+
+.content .right h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.content .right p {
+    color: #656565;
+    margin-bottom: 20px;
+}
+
+.content .right button {
+    margin: 10px;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background: orange;
+    color: #1D1E2D;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.content .right button:hover {
+    background: rgba(255, 166, 0, 0.706);
+
+}
+
+.social {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social a i {
+    font-size: 16px;
+    margin: 20px 0px;
+    color: orange;
+    transition: all 0.3s ease-in-out;
+}
+
+.social a i:hover {
+    color: rgb(141, 99, 22);
+    transform: scale(1.2);
+}
+
+.social .bxl-instagram {
+    font-size: 30px;
+}
+
+.text h1 {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    z-index: 111111;
+    transform: rotate(90deg);
+}
+
+.text h1 {
+    color: #fff;
+}
